@@ -1,7 +1,7 @@
 Class {
 	#name : #ObjectAsMethodWrapperDummy,
 	#superclass : #Object,
-	#category : #'MethodWrapperAsObject-Dummies'
+	#category : #'MethodWrapperAsObject-Tests'
 }
 
 { #category : #operations }

@@ -51,10 +51,10 @@ ObjectAsOneTimeMethodWrapperTest >> testInstallOn [
 ]
 
 { #category : #running }
-ObjectAsOneTimeMethodWrapperTest >> testInstallOnClassCategory [
-	"self run: #testInstallOnClassCategory"
+ObjectAsOneTimeMethodWrapperTest >> testInstallOnClass [
+	"self run: #testInstallOnClass"
 	| someWrappers |
-	someWrappers := ObjectAsOneTimeMethodWrapper installOnClassCategory: 'MethodWrappers-Dummies'.
+	someWrappers := ObjectAsOneTimeMethodWrapper installOnClass: ObjectAsMethodWrapperDummy.
 	[self assert: (ObjectAsMethodWrapperDummy new foo = 1).
 	self assert: (someWrappers anySatisfy: [:e | e executed not]).
 	self assert: (ObjectAsMethodWrapperDummy new bar = 2).
